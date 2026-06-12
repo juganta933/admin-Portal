@@ -1114,7 +1114,51 @@
     color: white;
     box-shadow: 0 22px 70px rgba(239, 68, 68, 0.32);
   }
+@media (max-width: 768px) {
+  .floating-blob,
+  .pulse-core,
+  .neural-dot,
+  .action-aura,
+  .project-aura,
+  .blog-aura,
+  .modal-shine,
+  .scan-layer {
+    display: none !important;
+  }
 
+  .dashboard-grid,
+  .project-grid,
+  .blog-grid,
+  .member-grid,
+  .loading-grid {
+    animation: none !important;
+    opacity: 0.22;
+  }
+
+  .stat-card,
+  .action-card,
+  .project-card,
+  .blog-card,
+  .member-card,
+  .category-card,
+  .summary-card {
+    animation: none !important;
+  }
+
+  .stat-card:hover,
+  .action-card:hover,
+  .project-card:hover,
+  .blog-card:hover,
+  .member-card:hover,
+  .category-card:hover,
+  .summary-card:hover {
+    transform: none !important;
+  }
+
+  .group:hover img {
+    transform: none !important;
+  }
+}
   @media (max-width: 768px) {
     .project-card img {
       height: 15rem;
