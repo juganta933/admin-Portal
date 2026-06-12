@@ -136,7 +136,7 @@
 >
   <!-- Animated Background -->
   <div class="pointer-events-none absolute inset-0">
-    <div class="absolute inset-0 scale-105 bg-[url('/dashboard-bg.jpg')] bg-cover bg-center opacity-[1]"></div>
+    <div class="dashboard-bg absolute inset-0 scale-105 bg-[url('/dashboard-bg.jpg')] bg-cover bg-center opacity-[1]"></div>
     <div class="absolute inset-0 bg-[#02030B]/62"></div>
 
     <div class="absolute inset-0 bg-[radial-gradient(circle_at_16%_18%,rgba(255,77,0,0.16),transparent_30%),radial-gradient(circle_at_84%_20%,rgba(0,255,209,0.10),transparent_28%),radial-gradient(circle_at_52%_94%,rgba(139,92,246,0.12),transparent_36%)]"></div>
@@ -297,6 +297,12 @@
     font-family: "Space Grotesk", system-ui, sans-serif;
     background: #02030B;
   }
+@media (max-width: 768px) {
+  .dashboard-bg {
+    opacity: 0.35 !important;
+    transform: none !important;
+  }
+}
 
   :global(.font-mono) {
     font-family: "JetBrains Mono", monospace;
@@ -504,6 +510,20 @@
       transform: rotate(360deg);
     }
   }
+@media (hover: none) {
+  .group:hover,
+  .stat-card:hover,
+  .action-card:hover,
+  .project-card:hover,
+  .blog-card:hover,
+  .member-card:hover {
+    transform: none !important;
+  }
+
+  .group:hover img {
+    transform: none !important;
+  }
+}
 
   .corner {
     position: absolute;
