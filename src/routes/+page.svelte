@@ -1742,4 +1742,67 @@
       transition: none !important;
     }
   }
+@media (max-width: 768px), (hover: none) {
+  .group:hover,
+  button:hover,
+  a:hover {
+    transform: none !important;
+    box-shadow: none !important;
+  }
+
+  .group:hover img,
+  .group:hover div,
+  .group:hover span,
+  .group:hover p,
+  .group:hover h1,
+  .group:hover h2,
+  .group:hover h3 {
+    transform: none !important;
+  }
+
+  .group:hover .absolute,
+  button:hover .absolute,
+  a:hover .absolute {
+    transform: none !important;
+  }
+
+  .floating-blob,
+  .pulse-core,
+  .neural-dot,
+  .scan-layer,
+  .modal-shine,
+  .action-aura,
+  .card-aura,
+  .hero-aura {
+    display: none !important;
+  }
+
+  .loading-grid,
+  .dashboard-grid,
+  .project-grid,
+  .blog-grid,
+  .member-grid,
+  .landing-grid,
+  .hero-grid {
+    animation: none !important;
+    opacity: 0.22 !important;
+  }
+
+  .group:hover {
+    filter: none !important;
+  }
+}
+@media (max-width: 768px) {
+  * {
+    -webkit-tap-highlight-color: transparent;
+  }
+
+  img {
+    transform: none !important;
+  }
+
+  .group:hover img {
+    transform: none !important;
+  }
+}
 </style>
