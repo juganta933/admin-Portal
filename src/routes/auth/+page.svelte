@@ -438,7 +438,40 @@
   .status-pill {
     animation: softDrop 0.85s ease both;
   }
+@media (max-width: 768px), (hover: none) {
+  .group:hover,
+  button:hover,
+  a:hover {
+    transform: none !important;
+  }
 
+  .group:hover img,
+  .group:hover div,
+  .group:hover span {
+    transform: none !important;
+  }
+
+  button:hover,
+  a:hover {
+    box-shadow: none !important;
+  }
+
+  .auth-card:hover,
+  .login-card:hover,
+  .glass-card:hover {
+    transform: none !important;
+    box-shadow: 0 24px 80px rgba(0, 0, 0, 0.45) !important;
+  }
+
+  .floating-blob,
+  .pulse-core,
+  .neural-dot,
+  .auth-aura,
+  .modal-shine,
+  .scan-layer {
+    display: none !important;
+  }
+}
   @keyframes softDrop {
     from {
       opacity: 0;
