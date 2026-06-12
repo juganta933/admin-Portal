@@ -553,6 +553,42 @@
       transform: none;
     }
   }
+@media (max-width: 768px), (hover: none) {
+  .stat-card,
+  .action-card {
+    transition: border-color 0.25s ease, background 0.25s ease !important;
+  }
+
+  .stat-card:hover,
+  .action-card:hover {
+    transform: none !important;
+    box-shadow: 0 20px 70px rgba(0, 0, 0, 0.45) !important;
+  }
+
+  .stat-card:hover .card-border {
+    opacity: 0.25 !important;
+  }
+
+  .action-card:hover .action-aura {
+    opacity: 0.42 !important;
+  }
+
+  .action-card:hover .corner {
+    height: 18px !important;
+    width: 18px !important;
+  }
+
+  .group:hover img,
+  .group:hover div,
+  .group:hover span {
+    transform: none !important;
+  }
+
+  .premium-link:hover {
+    transform: none !important;
+    box-shadow: none !important;
+  }
+}
 
   @media (prefers-reduced-motion: reduce) {
     .loading-grid,
